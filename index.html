@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Task List | Programming With Bostigger</title>
+  </head>
+  <body>
+    <div class="tasklist">
+      <nav>
+        <header>
+          <svg class="icon icon-survey">
+            <use xlink:href="/icons.svg#icon-survey"></use>
+          </svg>
+          <p>Task List</p>
+        </header>
+      </nav>
+      <div class="container">
+        <p class="comp__tasks">Total Task(s) : <span id="number__tasks"></span>
+          <b style="float: right">Completed Task(s) : <span id="completed__tasks"></span></b>
+        </p>
+        <div class="newtask">
+          <div class="newtask__input">
+            <input
+              type="text"
+              id="newtaskID"
+              placeholder="Add new task here..."
+            />
+            <input type="hidden" name="editTask" id="updateThisTask">
+          </div>
+          <div class="newtask__btn">
+            <button class="AddTaskBtn">Add Task</button>
+            <button class="EditTaskBtn" style="display: none;">Edit Task</button>
+            <button class="CancelTaskBtn" style="display: none;">Cancel</button>
+          </div>
+        </div>
+
+        <div class="task-list">
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
